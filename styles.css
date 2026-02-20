@@ -866,7 +866,12 @@ footer p span {
     grid-template-columns: 1fr 1fr;
   }
 
-  .nav-links a:not(:last-child) {
-    display: none;
+  .nav-links {
+    gap: 0.6rem;
+  }
+
+  .nav-links a {
+    font-size: 0.6rem;
+    letter-spacing: 0.03em;
   }
 }
