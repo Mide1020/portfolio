@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ 
+  <title>Ayomide Akinrefon — Backend Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />>
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor elements (controlled by script.js) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav>
+    <!-- ✏️ CHANGE: Your logo text -->
+    <div class="nav-logo">// <span>dev</span>.portfolio</div>
+    <div class="nav-links">
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+
+    <!-- Animated background grid -->
+    <div class="hero-grid"></div>
+
+    <div class="hero-tag">Available for freelance &amp; internship</div>
+
+    <h1 class="hero-name">
+      <br />
+      <span class="highlight">Ayomide Akinrefon</span>
+    </h1>
+
+    <!-- Typing animation-->
+    <p class="hero-role">
+      <span class="typed-text" id="typed"></span>
+    </p>
+
+    <p class="hero-desc">
+      I build robust, scalable backend systems, from REST APIs and database
+      architecture to containerized deployments. I turn complex requirements
+      into clean, reliable code.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+    </div>
+
+    <!-- Floating terminal window (hidden on mobile) -->
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <div class="t-dot r"></div>
+        <div class="t-dot y"></div>
+        <div class="t-dot g"></div>
+        <span class="terminal-title">~/projects — python3</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> uvicorn main:app --reload</span></div>
+        <div class="t-out"><span class="t-green">INFO</span>:     Uvicorn running on <span class="t-blue">http://127.0.0.1:8000</span></div>
+        <div class="t-out"><span class="t-green">INFO</span>:     Application startup complete.</div>
+        <div class="t-out">📦 Database: <span class="t-green">Connected</span></div>
+        <div class="t-out">🔒 JWT Auth: <span class="t-green">Enabled</span></div>
+        <div class="t-out">🚀 Routes: <span class="t-orange">endpoints loaded</span></div>
+        <br/>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> docker ps</span></div>
+        <div class="t-out">CONTAINER   IMAGE      STATUS</div>
+        <div class="t-out">api         fastapi    <span class="t-green">Up 3 hours</span></div>
+        <div class="t-out">db          postgres   <span class="t-green">Up 3 hours</span></div>
+        <br/>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> <span class="t-cursor"></span></span></div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       STACK
+  ============================================================ -->
+  <section class="stack-section" id="stack">
+    <div class="section-label">Tech Stack</div>
+    <h2 class="section-title reveal">What I Build With</h2>
+    <p class="section-sub reveal">Tools and technologies I use to architect and ship backend systems.</p>
+
+    <div class="stack-grid">
+      <div class="stack-item reveal"><span class="stack-icon">🐍</span><div class="stack-name">Python</div><div class="stack-type">Language</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">⚡</span><div class="stack-name">FastAPI</div><div class="stack-type">Framework</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🐘</span><div class="stack-name">PostgreSQL</div><div class="stack-type">Database</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🍃</span><div class="stack-name">MongoDB</div><div class="stack-type">Database</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🐳</span><div class="stack-name">Docker</div><div class="stack-type">DevOps</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🌐</span><div class="stack-name">HTML & CSS</div><div class="stack-type">Frontend</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">📜</span><div class="stack-name">JavaScript</div><div class="stack-type">Frontend</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🔗</span><div class="stack-name">REST APIs</div><div class="stack-type">Architecture</div></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section id="projects">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title reveal">Things I've Built</h2>
+    <p class="section-sub reveal">Real world backend systems with production-ready architecture.</p>
+
+    <div class="projects-grid">
+
+      <!-- ── PROJECT 1: Pizza Delivery App ── -->
+      <div class="project-card reveal">
+
+        
+          <div class="project-image">
+            <img src="c:\Users\PC\Pictures\Screenshots\pizza-docs.png" alt="Pizza Delivery API docs" />
+          </div>
+        <div class="project-num">01 / 03</div>
+        <span class="project-icon">🍕</span>
+        <h3 class="project-title">Pizza Delivery App</h3>
+        <p class="project-desc">
+          A full featured food delivery API, handling order management, real time
+          status tracking, and customer driver coordination. Built with a clean
+          RESTful architecture and role based access control.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">FastAPI</span>
+          <span class="tag accent">Python</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">JWT Auth</span>
+          <span class="tag">Docker</span>
+          <span class="tag">REST API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Mide1020/pizza-delivery" target="_blank" class="proj-link">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+             GitHub
+          </a>
+          <a href="https://pizza-delivery-ip2p.onrender.com/docs/" target="_blank" class="proj-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- ── PROJECT 2: Course Enrollment Platform ── -->
+       
+      <div class="project-card reveal">
+
+       
+          <div class="project-image">
+            <img src="c:\Users\PC\Pictures\Screenshots\course-enrollment-docs2.png" alt="Course Enrollment API docs" />
+          </div>
+        
+
+        <div class="project-num">02 / 03</div>
+        <span class="project-icon">🎓</span>
+        <h3 class="project-title">Course Enrollment Platform</h3>
+        <p class="project-desc">
+          A backend system powering a learning platform — handling course management,
+          student enrollments, progress tracking, and instructor dashboards with a
+          structured relational data model.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">FastAPI</span>
+          <span class="tag accent">Python</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">SQLAlchemy</span>
+          <span class="tag">Docker</span>
+          <span class="tag">REST API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Mide1020/course_enrollement_platform" class="proj-link">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://course-enrollement-platform.onrender.com/docs/" class="proj-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+      <!-- ── PROJECT 3: Authentication API ── -->
+      <div class="project-card reveal">
+
+        <!--
+          ✏️ ADD YOUR SCREENSHOT HERE--->
+          <div class="project-image">
+            <img src="c:\Users\PC\Pictures\Screenshots\auth-doc.png" alt="Authentication API docs" />
+          </div>
+        
+
+        <div class="project-num">03 / 03</div>
+        <span class="project-icon">🔐</span>
+        <h3 class="project-title">Authentication API</h3>
+        <p class="project-desc">
+          A production ready authentication service featuring JWT based auth,
+          OAuth2 integration, password hashing, refresh token rotation, and
+          rate limiting designed to be plugged into any application.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">FastAPI</span>
+          <span class="tag accent">Python</span>
+          <span class="tag">JWT / OAuth2</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Security</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Mide1020/Auth_api" class="proj-link">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://authentication-api-tdax.onrender.com" class="proj-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="about-section" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">About Me</div>
+        <!-- ✏️ CHANGE: Your personal headline -->
+        <h2 class="section-title reveal">Backend Developer<br/>Problem Solver</h2>
+        <!-- ✏️ CHANGE: Your bio paragraphs -->
+        <p class="reveal">
+          I'm a backend developer passionate about building the systems that power great products.
+          I specialize in <span>Python and FastAPI</span>, with solid experience designing RESTful APIs,
+          working with both SQL and NoSQL databases, and containerizing apps with Docker.
+        </p>
+        <p class="reveal">
+          Whether it's architecting a clean data model, securing an API with JWT authentication,
+          or optimizing database queries. I care about writing code that's
+          <span>reliable, maintainable, and production ready</span>.
+        </p>
+        <p class="reveal">
+          I'm actively looking for <span>freelance projects</span> and
+          <span>internship opportunities</span> where I can contribute and grow alongside a great team.
+        </p>
+      </div>
+
+      
+      <div class="about-stats reveal">
+        <div class="stat-box">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Backend Projects</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">2</div>
+          <div class="stat-label">DB Engines</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Drive to Build</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <p class="reveal">Have a project you need a backend for, or an internship role to fill? I'm currently available and would love to hear from you.</p>
+
+      <!-- ✏️ CHANGE: Your real email address -->
+      <a href="09064574425" class="btn btn-primary" style="display:inline-block;">
+        Say Hello →
+      </a>
+
+      <div class="contact-links reveal">
+        <!-- ✏️ CHANGE: Your GitHub profile URL -->
+        <a href="https://github.com/Mide1020" class="contact-link">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <!-- ✏️ CHANGE: Your LinkedIn profile URL -->
+        <a href="#" class="contact-link">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <!-- ✏️ CHANGE: Your email address -->
+        <a href="akinrefonayomide10@gmail.com" class="contact-link">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <!-- ✏️ CHANGE: Your name -->
+    <p>Designed &amp; Built by <span>Ayomide Akinrefon</span></p>
+    <p style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--muted);">// Backend Developer · 2025</p>
+  </footer>
+
+
+  <!-- Your script — keep this at the bottom of the body -->
+  <script src="script.js"></script>
+
+</body>
+</html>
